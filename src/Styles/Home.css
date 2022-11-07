@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: orange;
+    text-align: center;
+}
+
+.icons-conteiner {
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    font-size: 50px;
+    margin: 5px;
+}
+
+.home-conteiner img {
+    border-radius: 150px;
+}

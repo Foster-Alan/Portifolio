@@ -1,0 +1,13 @@
+header {
+    /* border: solid red 1px; */
+    align-items: baseline;
+    background-color: rgba(174, 173, 173, 0.642);
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;    
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
