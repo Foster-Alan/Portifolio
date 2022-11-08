@@ -9,7 +9,7 @@ export default class Projects extends Component {
         <h1>Projects</h1>
         <a target="blank" href="https://foster-pixel-art.netlify.app">Pixel Art</a>
         <br />
-        <a target="blank" href="https://foster-trivia.netlify.app">Trunfo</a>
+        <a target="blank" href="https://foster-trunfo.netlify.app">Trunfo</a>
         <br />
         <a target="blank" href="https://foster-wallet.netlify.app">Wallet</a>
         <br />
