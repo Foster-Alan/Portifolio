@@ -8,7 +8,6 @@ import trunfo from '../img/trunfo.png'
 import wallet from '../img/wallet.png'
 import tunes from '../img/tunes.png'
 
-//test 1
 export default class Projects extends Component {
   render() {
     return (
