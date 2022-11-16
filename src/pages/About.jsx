@@ -19,7 +19,7 @@ export default class About extends Component {
         <Header />
         <h1>Sobre mim</h1>
         <div className="skills">
-          {/* <h3>Skills</h3> */}
+          <h3>Skills</h3>
         <a href="http://" target="_blank" rel="noopener noreferrer"><IoLogoNodejs size={100} />NodeJs</a>
         <a href="http://" target="_blank" rel="noopener noreferrer"><GrReactjs size={100} />React</a>
         <a href="http://" target="_blank" rel="noopener noreferrer"><DiJavascript size={100} />JavaScript</a>
