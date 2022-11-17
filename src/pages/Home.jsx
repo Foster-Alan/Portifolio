@@ -19,7 +19,7 @@ export default class Home extends Component {
   <div class="card">
     <div class="front"></div>
     <div class="back">
-    <Link to="/about"><img src={sobremim}/></Link>
+    <Link to="/about"><img alt="Sobre mim" src={sobremim}/></Link>
      
     </div>
   </div>
@@ -29,7 +29,7 @@ export default class Home extends Component {
   <div class="card">
     <div class="front"></div>
     <div class="back">
-    <Link to="/projects"><img src={projetos}/></Link>
+    <Link to="/projects"><img alt='Projetos' src={projetos}/></Link>
     </div>
   </div>
 </div>
@@ -38,7 +38,7 @@ export default class Home extends Component {
   <div class="card">
     <div class="front"></div>
     <div class="back">
-      <img src="https://i.ytimg.com/vi/WZIGwN-5Ioo/maxresdefault.jpg"/>
+      <img alt="test" src="https://i.ytimg.com/vi/WZIGwN-5Ioo/maxresdefault.jpg"/>
     </div>
   </div>
 </div>
@@ -47,7 +47,7 @@ export default class Home extends Component {
   <div class="card">
     <div class="front"></div>
     <div class="back">
-      <img src="https://i.ytimg.com/vi/WZIGwN-5Ioo/maxresdefault.jpg"/>
+      <img alt='Test' src="https://i.ytimg.com/vi/WZIGwN-5Ioo/maxresdefault.jpg"/>
     </div>
   </div>
 </div>
