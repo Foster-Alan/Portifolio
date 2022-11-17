@@ -5,9 +5,9 @@
   }
 
   .container{
-    width: 328px;
-    height: 480px;
-    -webkit-perspective: 1500;
+      width: 328px;
+      height: 480px;
+      -webkit-perspective: 1500;
   }
   
   .container:hover .card{
