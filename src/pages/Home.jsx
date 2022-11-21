@@ -3,8 +3,10 @@ import React, { Component } from 'react'
 import '../Styles/Home.css';
 import '../Styles/Card.css';
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import sobremim from '../img/SobreMim.jpeg'
+import sobremim from '../img/AlanFosterCard.jpeg'
 import projetos from '../img/Projetos.jpeg'
+import Skills from '../img/SkillsCard.jpeg'
+import Bino from '../img/BinoCard.jpeg'
 import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
@@ -12,7 +14,7 @@ export default class Home extends Component {
     return (
         <div className="home-conteiner">
         {/* <Header /> */}
-      <h1>Pagina principal</h1>
+      <h1>Escolha Uma Carta</h1>
       {/* <img className="imgprofile" src='https://media-exp1.licdn.com/dms/image/C4D03AQENVF81QyZUrw/profile-displayphoto-shrink_800_800/0/1660755467136?e=1669852800&v=beta&t=fOzqgzWl6FYRDhqH7fJHxGWVfVlKVDQ1iGzIywr4dRA' width="300px" alt="foster" /> */}
       <section className="section-cards">
     <div class="container">
@@ -38,7 +40,7 @@ export default class Home extends Component {
   <div class="card">
     <div class="front"></div>
     <div class="back">
-      <img alt="test" src="https://i.ytimg.com/vi/WZIGwN-5Ioo/maxresdefault.jpg"/>
+    <Link to="/skills"><img alt='Skills' src={Skills}/></Link>
     </div>
   </div>
 </div>
@@ -47,7 +49,7 @@ export default class Home extends Component {
   <div class="card">
     <div class="front"></div>
     <div class="back">
-      <img alt='Test' src="https://i.ytimg.com/vi/WZIGwN-5Ioo/maxresdefault.jpg"/>
+      <img alt='Test' src={Bino}/>
     </div>
   </div>
 </div>

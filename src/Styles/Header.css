@@ -1,7 +1,7 @@
 header {
     /* border: solid red 1px; */
     align-items: baseline;
-    background-color: rgba(174, 173, 173, 0.642);
+    background-color:rgb(50,42,49);
     display: flex;
     justify-content: space-between;
     font-size: 30px;    
@@ -9,5 +9,5 @@ header {
 
 a {
     text-decoration: none;
-    color: orange;
+    color: rgb(207,105,51);
 }

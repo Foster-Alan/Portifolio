@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
           <Route exact path="/" component={ Home } />
           <Route exact path="/About" component={ About } />
           <Route exact path="/Projects" component={ Projects } />
+          <Route exact path="/skills" component={ Skills } />
 
         </Switch>
       </BrowserRouter>
