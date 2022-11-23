@@ -4,7 +4,8 @@ header {
     background-color:rgb(50,42,49);
     display: flex;
     justify-content: space-between;
-    font-size: 30px;    
+    font-size: 30px;   
+    padding: 8px; 
 }
 
 a {

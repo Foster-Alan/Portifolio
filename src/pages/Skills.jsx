@@ -19,15 +19,15 @@ export default class About extends Component {
         <Header />
         <div className="skills">
           <h3>Skills</h3>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><IoLogoNodejs size={100} />NodeJs</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><GrReactjs size={100} />React</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><DiJavascript size={100} />JavaScript</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><IoLogoCss3 size={100} />CSS</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><SiRedux size={100} />Redux</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><GrDocker size={100} />Docker</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><SiTestinglibrary size={100} />Testing Library</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><DiGit size={100} />Git</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"><ImHtmlFive size={100} />HTML</a>
+        <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><IoLogoNodejs size={100} />NodeJs</a>
+        <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><GrReactjs size={100} />React</a>
+        <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><DiJavascript size={100} />JavaScript</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"><IoLogoCss3 size={100} />CSS</a>
+        <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer"><SiRedux size={100} />Redux</a>
+        <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><GrDocker size={100} />Docker</a>
+        <a href="https://testing-library.com/" target="_blank" rel="noopener noreferrer"><SiTestinglibrary size={100} />Testing Library</a>
+        <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><DiGit size={100} />Git</a>
+        <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><ImHtmlFive size={100} />HTML</a>
         </div>
         </div>
     )

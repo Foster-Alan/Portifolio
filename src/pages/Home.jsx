@@ -15,9 +15,9 @@ export default class Home extends Component {
         <div className="home-conteiner">
         {/* <Header /> */}
       <h1>Escolha Uma Carta</h1>
-      {/* <img className="imgprofile" src='https://media-exp1.licdn.com/dms/image/C4D03AQENVF81QyZUrw/profile-displayphoto-shrink_800_800/0/1660755467136?e=1669852800&v=beta&t=fOzqgzWl6FYRDhqH7fJHxGWVfVlKVDQ1iGzIywr4dRA' width="300px" alt="foster" /> */}
+      <div className="all-Cards">
       <section className="section-cards">
-    <div class="container">
+    <div class="container div1">
   <div class="card">
     <div class="front"></div>
     <div class="back">
@@ -27,7 +27,7 @@ export default class Home extends Component {
   </div>
 </div>
 
-<div class="container">
+<div class="container div2">
   <div class="card">
     <div class="front"></div>
     <div class="back">
@@ -36,7 +36,7 @@ export default class Home extends Component {
   </div>
 </div>
 
-<div class="container">
+<div class="container div3">
   <div class="card">
     <div class="front"></div>
     <div class="back">
@@ -58,6 +58,7 @@ export default class Home extends Component {
 <div className='icons-conteiner'>
       <a className='icons' href="https://www.linkedin.com/in/foster-/" target="blank"><BsLinkedin /></a>
       <a className='icons' href="https://github.com/Foster-Alan" target="blank"><BsGithub /></a>
+      </div>
       </div>
       </div>
     )

@@ -2,7 +2,9 @@
     /* border: solid red 1px; */
     display: flex;
     flex-wrap: wrap;
-    margin-right: 75%;
+    margin-left: 40%;
+    width: 25%;
+    justify-content: center;
 }
 
 .skills a {
