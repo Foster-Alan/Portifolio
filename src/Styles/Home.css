@@ -43,6 +43,11 @@ body {
     align-items: flex-start;
 }
 
+.section-cards {
+    /* border: solid red 1px; */
+    align-items: center;
+    justify-content: center;
+}
 .trybe {
     display: flex;
     justify-content: center;

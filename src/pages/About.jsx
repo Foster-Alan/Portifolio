@@ -17,11 +17,6 @@ export default class About extends Component {
         <p>Em Maio de 2022 <br /> Motivado pela paixão <br /> Por tecnologia <br /> Ingressei minha jornada <br /> Como desenvolvedor <br /> Full stack na Trybe <br /> Onde aprendi e deselvovi <br /> Minhas habilidades. </p>
         <img src={trybekit} width={200} alt="tribekit" />
         </div>
-        <h1>Curiosidades</h1>
-        <div className="trybe">
-          <p>Danço break dance <br /> Desde 2010 <br /> Onde ja atuei <br /> Como instrutor.</p>
-        <img src={bboy} width={200} alt="bboy" />
-        </div>
         </div>
     )
   }
