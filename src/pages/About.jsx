@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Header from './Header'
 import '../Styles/About.css';
 import trybekit from '../img/trybekit.jpeg'
-import bboy from '../img/bboy.jpg'
 
 export default class About extends Component {
   render() {

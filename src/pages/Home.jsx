@@ -17,38 +17,38 @@ export default class Home extends Component {
       <h1>Escolha Uma Carta</h1>
       <div className="all-Cards">
       <section className="section-cards">
-    <div class="container div1">
-  <div class="card">
-    <div class="front"></div>
-    <div class="back">
+    <div className="container div1">
+  <div className="card">
+    <div className="front"></div>
+    <div className="back">
     <Link to="/about"><img alt="Sobre mim" src={sobremim}/></Link>
      
     </div>
   </div>
 </div>
 
-<div class="container div2">
-  <div class="card">
-    <div class="front"></div>
-    <div class="back">
+<div className="container div2">
+  <div className="card">
+    <div className="front"></div>
+    <div className="back">
     <Link to="/projects"><img alt='Projetos' src={projetos}/></Link>
     </div>
   </div>
 </div>
 
-<div class="container div3">
-  <div class="card">
-    <div class="front"></div>
-    <div class="back">
+<div className="container div3">
+  <div className="card">
+    <div className="front"></div>
+    <div className="back">
     <Link to="/skills"><img alt='Skills' src={Skills}/></Link>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="card">
-    <div class="front"></div>
-    <div class="back">
+<div className="container">
+  <div className="card">
+    <div className="front"></div>
+    <div className="back">
     <Link to="/Curiosidades"><img alt='Curiosidades' src={Curiosidades}/></Link>
     </div>
   </div>
