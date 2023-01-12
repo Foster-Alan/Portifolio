@@ -12,3 +12,16 @@
     /* align-items: center; */
     justify-content: center;
 }
+
+@media screen and (max-width: 700px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+     
+
+    
+}

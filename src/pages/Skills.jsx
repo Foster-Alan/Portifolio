@@ -29,6 +29,8 @@ export default class About extends Component {
         <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><DiGit size={100} />Git</a>
         <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><ImHtmlFive size={100} />HTML</a>
         </div>
+
+       
         </div>
     )
   }
