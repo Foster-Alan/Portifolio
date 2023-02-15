@@ -19,3 +19,14 @@
     width: 100%;
     justify-content: center;
 }
+
+.trybe {
+    display: flex;
+    flex-direction: column;
+}
+
+.trybe1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

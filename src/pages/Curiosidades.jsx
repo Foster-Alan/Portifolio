@@ -9,8 +9,10 @@ export default function Curiosidades() {
         <Header />
          <h1>Curiosidades</h1>
         <div className="trybe">
+          <div className="trybe1">
           <p>Danço break dance <br /> Desde 2010 <br /> No grupo <br/> Expressao de Rua <br /> Onde ja atuei <br /> Como instrutor.</p>
         <img src={bboy} width={200} alt="bboy" />
+        </div>
         </div>
     </div>
   )

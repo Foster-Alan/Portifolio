@@ -10,7 +10,7 @@ import { GrDocker } from 'react-icons/gr';
 import { SiTestinglibrary } from 'react-icons/si';
 import { DiGit } from 'react-icons/di';
 import { ImHtmlFive } from 'react-icons/im';
-
+import { SiTypescript } from 'react-icons/si';
 
 export default class About extends Component {
   render() {
@@ -28,6 +28,7 @@ export default class About extends Component {
         <a href="https://testing-library.com/" target="_blank" rel="noopener noreferrer"><SiTestinglibrary size={100} />Testing Library</a>
         <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><DiGit size={100} />Git</a>
         <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><ImHtmlFive size={100} />HTML</a>
+        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><SiTypescript size={100} />TypeScript</a>
         </div>
 
        
