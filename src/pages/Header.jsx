@@ -8,13 +8,16 @@ export default function Header() {
   const [menu, setMenu] = useState(true);
   return (
     <header>
-      <div className="header-conteiner">
-        <Link to="/">Principal</Link>
+      <nav className="header-conteiner">
+       
+        <Link to="/">Home</Link>
         <Link to="/About">Sobre Mim</Link>
         <Link to="/skills">Skills</Link>
-        <Link to="/Curiosidades">Curiosidades</Link>
+        <Link to="/exp">Experiencia</Link>
         <Link to="/Projects">Projetos</Link>
-      </div>
+      
+        <div class="dot"></div>
+      </nav>
       <div className="header-mobile">
         {menu ? (
           <GiHamburgerMenu size={25}
@@ -30,7 +33,7 @@ export default function Header() {
               <Link to="/">Principal</Link>
               <Link to="/About">Sobre Mim</Link>
               <Link to="/skills">Skills</Link>
-              <Link to="/Curiosidades">Curiosidades</Link>
+              <Link to="/exp">Experiencia</Link>
               <Link to="/Projects">Projetos</Link>
         </div>
             

@@ -14,19 +14,27 @@
 
 }
 
-.skills h3 {
+.skills h1 {
     display: flex;
     width: 100%;
     justify-content: center;
+    text-shadow: 0 0 10px #ffb300;
 }
 
-.trybe {
+.about {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.trybe1 {
+.about-card {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-conteiner h1 {
+    text-shadow: 0 0 10px #ffb300;
 }

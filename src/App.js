@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
-import Curiosidades from './pages/Curiosidades';
+import exp from './pages/Exp';
 
 class App extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class App extends React.Component {
           <Route exact path="/About" component={ About } />
           <Route exact path="/Projects" component={ Projects } />
           <Route exact path="/skills" component={ Skills } />
-          <Route exact path="/Curiosidades" component={ Curiosidades } />
+          <Route exact path="/exp" component={ exp } />
 
         </Switch>
       </BrowserRouter>

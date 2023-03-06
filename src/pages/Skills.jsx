@@ -18,7 +18,7 @@ export default class About extends Component {
       <div>
         <Header />
         <div className="skills">
-          <h3>Skills</h3>
+          <h1>Skills</h1>
         <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><IoLogoNodejs size={100} />NodeJs</a>
         <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><GrReactjs size={100} />React</a>
         <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer"><DiJavascript size={100} />JavaScript</a>

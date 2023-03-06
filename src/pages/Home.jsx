@@ -6,7 +6,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import sobremim from '../img/AlanFosterCard.jpeg'
 import projetos from '../img/Projetos.jpeg'
 import Skills from '../img/SkillsCard.jpeg'
-import Curiosidades from '../img/Curiosidades.jpeg'
+import Experiência from '../img/Experiência.jpeg'
 import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
@@ -49,7 +49,7 @@ export default class Home extends Component {
   <div className="card">
     <div className="front"></div>
     <div className="back">
-    <Link to="/Curiosidades"><img alt='Curiosidades' src={Curiosidades}/></Link>
+    <Link to="/exp"><img alt='Experiencia' src={Experiência}/></Link>
     </div>
   </div>
 </div>
