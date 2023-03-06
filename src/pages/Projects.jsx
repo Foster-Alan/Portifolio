@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import Slider from 'infinite-react-carousel';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Header from './Header'
