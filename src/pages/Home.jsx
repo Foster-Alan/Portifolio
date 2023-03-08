@@ -11,49 +11,28 @@ import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
   render() {
+    const cards = [
+      { id: 1, link: '/about', image: sobremim },
+      { id: 2, link: '/projects', image: projetos },
+      { id: 3, link: '/skills', image: Skills },
+      { id: 4, link: '/exp', image: Experiência }
+    ];
     return (
         <div className="home-conteiner">
         {/* <Header /> */}
       <h1>Escolha Uma Carta</h1>
-      <div className="all-Cards">
-      <section className="section-cards">
-    <div className="container div1">
-  <div className="card">
-    <div className="front"></div>
-    <div className="back">
-    <Link to="/about"><img alt="Sobre mim" src={sobremim}/></Link>
-     
+      <div className="all-Cards"> 
+<section className="section-cards">
+  {cards.map(card => (
+    <div key={card.id} className={`container div${card.id}`}>
+      <div className="card">
+        <div className="front"></div>
+        <div className="back">
+          <Link to={card.link}><img alt={card.link} src={card.image}/></Link>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-<div className="container div2">
-  <div className="card">
-    <div className="front"></div>
-    <div className="back">
-    <Link to="/projects"><img alt='Projetos' src={projetos}/></Link>
-    </div>
-  </div>
-</div>
-
-<div className="container div3">
-  <div className="card">
-    <div className="front"></div>
-    <div className="back">
-    <Link to="/skills"><img alt='Skills' src={Skills}/></Link>
-    </div>
-  </div>
-</div>
-
-<div className="container">
-  <div className="card">
-    <div className="front"></div>
-    <div className="back">
-    <Link to="/exp"><img alt='Experiencia' src={Experiência}/></Link>
-    </div>
-  </div>
-</div>
-
+  ))}
 </section>
 <div className='icons-conteiner'>
       <a className='icons' href="https://www.linkedin.com/in/foster-/" target="blank"><BsLinkedin /></a>
