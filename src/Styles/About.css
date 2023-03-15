@@ -26,13 +26,29 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .about-card {
     /* border: 1px solid red; */
     display: flex;
+    height: 100%;
+    padding: 1%;
+    /* width: 35rem; */
+    width: 40%;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    border-radius: 43px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 5px 5px 10px #ffb300,
+        -5px -5px 10px #ffb300;
+    ;
+}
+
+.about-card img {
+    width: 200px;
+    height: 200px;
 }
 
 .about-conteiner h1 {
