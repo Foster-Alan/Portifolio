@@ -11,6 +11,8 @@ import { SiTestinglibrary } from 'react-icons/si';
 import { DiGit } from 'react-icons/di';
 import { ImHtmlFive } from 'react-icons/im';
 import { SiTypescript } from 'react-icons/si';
+import { GrMysql } from 'react-icons/gr';
+import { SiMongodb } from 'react-icons/si';
 
 export default class About extends Component {
   render() {
@@ -29,6 +31,8 @@ export default class About extends Component {
         <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><DiGit size={100} />Git</a>
         <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><ImHtmlFive size={100} />HTML</a>
         <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><SiTypescript size={100} />TypeScript</a>
+        <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><GrMysql size={100} />MySQL</a>
+        <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><SiMongodb size={100} />MongoDB</a>
         </div>
 
        
