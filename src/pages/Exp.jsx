@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import '../Styles/About.css';
 import '../Styles/Exp.css';
+import Footer from './Footer';
 
 export default function Exp() {
   return (
@@ -23,6 +24,7 @@ export default function Exp() {
          </div>
 
         </div>
+        <Footer />
     
     </div>
   )

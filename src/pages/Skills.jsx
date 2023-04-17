@@ -13,6 +13,7 @@ import { ImHtmlFive } from 'react-icons/im';
 import { SiTypescript } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { SiMongodb } from 'react-icons/si';
+import Footer from './Footer';
 
 export default class About extends Component {
   render() {
@@ -34,6 +35,7 @@ export default class About extends Component {
         <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><GrMysql size={100} />MySQL</a>
         <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer"><SiMongodb size={100} />MongoDB</a>
         </div>
+        <Footer />
 
        
         </div>

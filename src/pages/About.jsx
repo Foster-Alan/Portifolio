@@ -6,6 +6,7 @@ import bboy from '../img/bboy.jpg'
 import note from '../img/note.jpg'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Footer from './Footer';
 
 export default class About extends Component {
   render() {
@@ -95,6 +96,7 @@ Na dança eu não preciso mover o braço<br />para que certo movimento com as pe
 </div>
         
         </div>
+        <Footer />
         </div>
     )
   }

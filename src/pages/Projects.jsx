@@ -9,6 +9,7 @@ import Trivia from '../img/TriviaCard.jpeg'
 import trunfo from '../img/TrunfoCard.jpeg'
 import wallet from '../img/WalletCard.jpeg'
 import tunes from '../img/TunesCard.jpeg'
+import Footer from './Footer';
 
 export default class Projects extends Component {
   render() {
@@ -72,6 +73,7 @@ export default class Projects extends Component {
     <a target="blank" href="https://foster-trivia.netlify.app"><img src={Trivia} alt="pixel art" width={200} srcset="" /></a>
     </div>
 </Carousel>
+<Footer />
   
       </>
     )

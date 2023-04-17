@@ -8,6 +8,7 @@ import projetos from '../img/Projetos.jpeg'
 import Skills from '../img/SkillsCard.jpeg'
 import Experiência from '../img/Experiência.jpeg'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 export default class Home extends Component {
   render() {
@@ -34,10 +35,7 @@ export default class Home extends Component {
     </div>
   ))}
 </section>
-<div className='icons-conteiner'>
-      <a className='icons' href="https://www.linkedin.com/in/foster-/" target="blank"><BsLinkedin /></a>
-      <a className='icons' href="https://github.com/Foster-Alan" target="blank"><BsGithub /></a>
-      </div>
+<Footer />
       </div>
       </div>
     )

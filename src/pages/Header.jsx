@@ -13,7 +13,7 @@ export default function Header() {
         <Link to="/">Home</Link>
         <Link to="/About">Sobre Mim</Link>
         <Link to="/skills">Skills</Link>
-        <Link to="/exp">Experiencia</Link>
+        <Link to="/exp">Experiência</Link>
         <Link to="/Projects">Projetos</Link>
       
         <div class="dot"></div>
