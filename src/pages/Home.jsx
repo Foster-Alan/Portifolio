@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 // import Header from './Header'
 import '../Styles/Home.css';
 import '../Styles/Card.css';
-import { BsLinkedin, BsGithub } from "react-icons/bs";
 import sobremim from '../img/AlanFosterCard.jpeg'
 import projetos from '../img/Projetos.jpeg'
 import Skills from '../img/SkillsCard.jpeg'
