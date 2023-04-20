@@ -2,69 +2,93 @@
     /* border: solid red 1px; */
     display: flex;
     flex-wrap: wrap;
-    margin-left: 40%;
-    width: 25%;
+    width: 70%;
     justify-content: center;
+    margin: 2rem auto;
+    gap: 2rem;
 }
 
 .skills a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 1rem;
 
 }
 
 .skills h1 {
     display: flex;
+    font-size: 2.5rem;
     width: 100%;
     justify-content: center;
-    text-shadow: 0 0 10px #ffb300;
+    /* text-shadow: 0 0 10px #ffb300; */
 }
 
-.about {
+.skills svg {
+    width: 60px;
+    align-self: center;
+}
+
+.about-conteiner {
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    /* flex-direction: column; */
-    /* gap: 1rem; */
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.aboutMe__conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem 2rem;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
     /* border: 1px solid red; */
 }
 
-.about .about-card {
-    /* background-color: black; */
+.about__card {
+    border: 1px solid #a39869;
     display: flex;
-    height: 100%;
-    padding: 1%;
-    /* width: 35rem; */
-    width: 100%;
-    /* flex-direction: column; */
-    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 300px;
+    height: 610px;
+    padding: 1rem;
+    border-radius: 5px;
+}   
+
+.divImg {
+    height: 250px;
+    /* border: 1px solid red; */
+    display: flex;
     align-items: center;
-    border-radius: 43px;
-    /* background: rgba(255, 255, 255, 0); */
-    /* box-shadow: 5px 5px 10px #ffb300,
-        -5px -5px 10px #ffb300;
-    ; */
+    justify-content: center;
+    justify-self: flex-start;
 
 }
 
-.about-card img {
+.divImg img {
+    object-fit: cover;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
+    /* border: 4px solid #a39869; */
+}
+
+.about__card p {
+    /* margin-top: 1rem; */
+    /* border-top: 1px solid #a39869; */
+    /* background-color: grey; */
+    font-size: 1.2rem;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+    line-height: 2.3rem;
 }
 
 .about-conteiner h1 {
-    text-shadow: 0 0 10px #ffb300;
-}
-
-.about-card:hover {
-    transform: translateY(-10px);
-}
-
-.about-conteiner .carrosel img {
-    width: 200px;
-    height: 200px;
+    font-size: 2.5rem;
 }
 

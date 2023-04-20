@@ -1,3 +1,4 @@
 .exp-conteiner h1 {
-    text-shadow: 0 0 10px #ffb300;
+    /* text-shadow: 0 0 10px #ffb300; */
+    font-size: 2.5rem;
 }

@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -23,6 +24,6 @@ code {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(252,172,111);
+  background-color: #a39869;
   border-radius: 100px;
 }
