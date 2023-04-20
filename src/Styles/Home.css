@@ -3,7 +3,7 @@ h1 {
 }
 
 body {
-    min-height: 100vh;
+    min-height: max-content;
     background-color: black;
     /* background: radial-gradient(#bc8439, #2d1b13, black); */
     /* color: rgb(207, 105, 51); */
