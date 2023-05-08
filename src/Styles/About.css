@@ -38,8 +38,8 @@
 .aboutMe__conteiner {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem 2rem;
     flex-wrap: wrap;
     width: 80%;
