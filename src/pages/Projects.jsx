@@ -35,6 +35,7 @@ export default class Projects extends Component {
       <Header />
       <div className="projects">
         <h1>Meus Projetos</h1>
+        <p>(Clique para ser redirecionado)</p>
       </div>
 <Carousel
   // swipeable={false}

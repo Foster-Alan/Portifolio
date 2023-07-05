@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     margin-top: 2rem;
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects h1 {
@@ -15,6 +17,10 @@
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     /* text-shadow: 0 0 10px #ffb300; */
+}
+
+.projects p {
+    text-align: center;
 }
 
 
