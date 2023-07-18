@@ -20,7 +20,15 @@ export default class About extends Component {
       <div className="about-conteiner">
         <Header />
         <h1>Sobre mim</h1>
-        <div className="aboutMe__conteiner">
+        <div className="about-cards">
+          {aboutMe.map((about) => (
+              <div className="image-container">
+              <img src={about[1]} alt="" />
+              <p className="image-text">{about[0]}</p>
+            </div>
+          ))}
+        </div>
+        {/* <div className="aboutMe__conteiner">
           {aboutMe.map((about) => (
             <div className="about__card">
               <div className="divImg">
@@ -29,7 +37,7 @@ export default class About extends Component {
               <p>{about[0]}</p>
             </div>
           ))}
-        </div>
+        </div> */}
         <Footer />
       </div>
     )

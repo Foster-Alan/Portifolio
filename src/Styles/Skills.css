@@ -1,0 +1,49 @@
+.skills-conteiner .image-contaianer {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.skills-conteiner img {
+    max-width: 300px;
+    transition: opacity 0.3s ease;
+}
+
+.skills-conteiner .image-container:hover img {
+    opacity: 0;
+}
+
+.skills-conteiner .image-text {
+    display: none; /* Inicialmente, o texto é ocultado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.skills-conteiner .image-container:hover .image-text {
+    display: block; /* Ao passar o cursor, o texto é exibido */
+}
+
+.skills-conteiner .option {
+    /* border: 1px solid red;  */
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-conteiner {
+    display: flex;
+}
+
+.skills-conteiner .skills {
+    display: flex;
+    /* border: 1px solid green; */
+    align-items: center;
+    justify-content: center;
+}
