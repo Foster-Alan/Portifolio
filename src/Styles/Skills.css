@@ -1,4 +1,6 @@
-.skills-conteiner .image-contaianer {
+.skills-conteiner .image-container {
+    /* border: 1px solid red; */
+    display: none; /* Remover para que o container apareça */
     text-align: center;
     margin-top: 20px;
     position: relative;

@@ -18,8 +18,8 @@ import { SiMongodb } from 'react-icons/si';
 import { FaPython } from 'react-icons/fa';
 
 const ImageChanger = () => {
-  const [currentImage, setCurrentImage] = useState('image1.jpg');
-  const [imageText, setImageText] = useState('Texto da Imagem 1');
+  const [currentImage, setCurrentImage] = useState('image1.jpg'); //Add currentImage como primeiro parametro dessa const
+  const [imageText, setImageText] = useState('Texto da Imagem 1'); //Add imageText Como primeiro parametro dessa const
 
   const changeImage = (imageName, text) => {
     setCurrentImage(imageName);
@@ -72,10 +72,10 @@ const ImageChanger = () => {
         {<SiMongodb size={100}/>}Mongodb
         </div>
       </div>
-      {/* <div className="image-container">
+      <div className="image-container">
         <img src={currentImage} alt="Imagem exibida" />
         <div className="image-text">{imageText}</div>
-      </div> */}
+      </div>
       </div>
       <Footer />
     </div>
