@@ -1,9 +1,12 @@
 .skills-conteiner .image-container {
-    /* border: 1px solid red; */
-    display: none; /* Remover para que o container apareça */
+    border: 1px solid red;
+    margin-right: 2rem;
+    display: none; /*Remover para que o container apareça */
     text-align: center;
     margin-top: 20px;
     position: relative;
+    background-color: white;
+
 }
 
 .skills-conteiner img {

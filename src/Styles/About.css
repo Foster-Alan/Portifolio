@@ -112,6 +112,7 @@
     position: relative;
     /* width: 19rem; */
     /* height: 19rem; */
+    cursor: pointer;
 
 }
 
@@ -119,6 +120,7 @@
     width: 300px;
     height: 300px;
     transition: opacity 0.3s ease;
+    object-fit: cover;
 }
 
 .image-container:hover img {
