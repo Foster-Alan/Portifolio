@@ -47,7 +47,7 @@ const ImageChanger = () => {
       <div>
         <Header />
         <h1>Skills</h1>
-        <div className="skills-conteiner">
+        <div className="skills-conteiner">      
       <div className="skills">
         <div className="option" onClick={() => changeImage(htmlimage, 'HTML (Hypertext Markup Language). É a linguagem de marcação utilizada para criar a estrutura e o conteúdo básico de páginas da web. HTML usa tags para definir elementos e sua formatação.')}>
           {<ImHtmlFive size={100}/>}HTML

@@ -7,10 +7,19 @@
     flex-direction: column;
 }
 
+.skills-conteiner .option:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
 .skills-conteiner .image-container {
     margin-right: 2rem;
     background-color: white;
     border-radius: 25px;
+}
+
+.skills-conteiner .image-container:hover {
+    background-color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 700px) {
@@ -24,6 +33,6 @@
     }
     .skills-conteiner .image-container {
         margin-right: 0rem;
-        border-radius: 50px;
+        border-radius: 25px;
     }
 }
