@@ -6,7 +6,7 @@ header {
 
 .header-conteiner {
     /* border: solid red 1px; */
-    align-items: baseline;
+    align-items: center;
     /* background-color:rgb(50,42,49); */
     background-color: rgba(255, 255, 255, 0.1);
     /* backdrop-filter: blur(10px); */
@@ -34,7 +34,15 @@ a:hover {
     display: none;
 }
 
+.header-mobile img {
+    width: 15rem;
+}
+
 @media screen and (max-width: 700px) {
+    header {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
     .header-conteiner {
         display: none;
     }
@@ -52,8 +60,8 @@ a:hover {
         font-size: 2rem;
         display: flex;
         flex-direction: column;
-        width: 70vw;
-        height: 100vh;
+        width: 65vw;
+        height: 80vh;
         align-items: center;
         justify-content: space-around;
         position: absolute;
@@ -86,6 +94,11 @@ a:hover {
     width: 100%;
     height: 4.5rem;
 
+}
+
+.header-conteiner img {
+    width: 17rem;
+    margin-right: 14rem;
 }
 
 .navMenu a {
