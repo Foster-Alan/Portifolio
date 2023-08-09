@@ -18,26 +18,26 @@
     margin-right: 2rem;
     border: 3px solid blue;
     border: 4px solid transparent;
-    border-image: linear-gradient(to right, #ffa600, #000000, #ffffff);
+    border-image: linear-gradient(to right, #a39869, #000000, #ffffff);
     border-image-slice: 1;
     animation: borderAnimation 3s linear infinite;
 }
 
 @keyframes borderAnimation {
     0% {
-      border-image-source: linear-gradient(to right, #ffa600, #000000, #ffffff);
+      border-image-source: linear-gradient(to right, #a39869, #000000, #ffffff);
     }
     25% {
-      border-image-source: linear-gradient(to right, #ffffff, #000000, #ffa600);
+      border-image-source: linear-gradient(to right, #ffffff, #000000, #a39869);
     }
     50% {
-      border-image-source: linear-gradient(to right, #000000, #ffa600, #ffffff);
+      border-image-source: linear-gradient(to right, #000000, #a39869, #ffffff);
     }
     75% {
-      border-image-source: linear-gradient(to right, #ffa600, #f8f8f8, #000000);
+      border-image-source: linear-gradient(to right, #a39869, #f8f8f8, #000000);
     }
     100% {
-      border-image-source: linear-gradient(to right, #ffffff, #000000, #ffa600);
+      border-image-source: linear-gradient(to right, #ffffff, #000000, #a39869);
     }
   }
 
