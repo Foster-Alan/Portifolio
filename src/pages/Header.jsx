@@ -10,8 +10,8 @@ export default function Header() {
     <header>
       <nav className="header-conteiner">
        
-        <Link to="/">Home</Link>
-        <Link to="/About">Sobre Mim</Link>
+        <Link to="/">Início</Link>
+        <Link to="/About">Sobre</Link>
         <Link to="/skills">Skills</Link>
         <Link to="/exp">Experiência</Link>
         <Link to="/Projects">Projetos</Link>
