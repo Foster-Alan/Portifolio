@@ -11,11 +11,11 @@ import Footer from './Footer';
 
 export default class About extends Component {
   render() {
-    const aboutMe = [["Desde criança, eu sempre fui apaixonado por game e ver como em cada game que era lançado uma ferramenta nova aparecia, em um game era possível usar carros, no ano seguinte era possível ter barcos e explorar o mar, era algo incrível.", [infancia]], 
-    ["O meu start veio efetivamente no ensino médio, onde na realização de uma prova estadual por atingir uma nota elevada eu fui contemplado com um notebook, e no ano seguinte outro.", [note]], 
-    ["No ensino médio eu conheci a dança, e na dança foi outra virada de chave onde eu pude aprimorar esse lado social e me mantive durante anos atuando como instrutor de break dance ate vir a pandemia.", [test]], 
-    ["Na pandemia ficou impossível atuar e foi onde eu conheci a Trybe onde eu vi a oportunidade de reacender essa paixão por tecnologia e acabei percebendo durante o curso que em muitos aspectos a programação se conectava com a dança.", [trybekit]], 
-    ["Na dança eu não preciso mover o braço para que certo movimento com as pernas seja efetivo, mas fica atrativo, assim como eu não preciso em uma aplicação de login escrever 'digite sua senha' para que meu código funcione mas em ambos os casos eu busco desenvolver o meu melhor.", [bboy]]]
+    const aboutMe = [["Desde a infância, minha paixão por jogos sempre cresceu ao testemunhar a evolução constante de cada lançamento. Cada novo jogo introduzia ferramentas inovadoras, como a capacidade de dirigir carros em um ano e explorar mares de barco no próximo. Era uma progressão emocionante e surpreendente.", [infancia]], 
+    ["Minha jornada decolou durante o ensino médio, quando a conquista de uma nota excepcional em um exame estadual me rendeu um presente valioso: um notebook. Esse marco abriu as portas para oportunidades ainda maiores, já que no ano seguinte fui agraciado com outro notebook", [note]], 
+    ["No ensino médio, fui apresentado à dança, o que se revelou uma virada de chave para o desenvolvimento das minhas habilidades sociais. Atuei como instrutor de break dance por anos, até a chegada da pandemia.", [test]], 
+    ["Com a pandemia, minha atuação na dança foi interrompida, levando-me a descobrir a Trybe. Nela, enxerguei a chance de reacender minha paixão pela tecnologia e percebi, ao longo do curso, que a programação se conectava de diversas maneiras com a dança.", [trybekit]], 
+    ["Na dança, certos movimentos das pernas podem ser eficazes mesmo sem movimentar os braços, embora adicionar essa dimensão seja atrativo. Da mesma forma, em uma tela de login, não é estritamente necessário incluir 'insira sua senha' para que o código funcione, mas em ambos os casos, busco aprimorar minha performance ao máximo.", [bboy]]]
     return (
       <div className="about-conteiner">
         <Header />
