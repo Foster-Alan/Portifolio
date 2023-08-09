@@ -12,11 +12,39 @@
     cursor: pointer;
 }
 
-.skills-conteiner .image-container {
+/* .skills-conteiner .image-container {
     margin-right: 2rem;
     background-color: white;
     border-radius: 25px;
+} */
+
+.skills-conteiner .image-container {
+    background-color: white;
+    margin-right: 2rem;
+    border: 2px solid blue;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    border-image-slice: 1;
+    animation: borderAnimation 3s linear infinite;
 }
+
+@keyframes borderAnimation {
+    0% {
+      border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    }
+    25% {
+      border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+    }
+    50% {
+      border-image-source: linear-gradient(to right, #0000ff, #ff0000, #00ff00);
+    }
+    75% {
+      border-image-source: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    }
+    100% {
+      border-image-source: linear-gradient(to right, #00ff00, #0000ff, #ff0000);
+    }
+  }
 
 .skills-conteiner .image-container:hover {
     background-color: rgb(0, 0, 0);
@@ -33,6 +61,6 @@
     }
     .skills-conteiner .image-container {
         margin-right: 0rem;
-        border-radius: 25px;
+        /* border-radius: 25px; */
     }
 }
