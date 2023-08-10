@@ -4,7 +4,7 @@ import "../Styles/Header.css";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import logo01 from '../img/logo01.png'
+import logo03 from '../img/logo03.png'
 
 export default function Header() {
   const [menu, setMenu] = useState(true);
@@ -12,7 +12,7 @@ export default function Header() {
     <header>
       <nav className="header-conteiner">
 
-        <img src={logo01} alt="Logo Foster" />
+        <img src={logo03} alt="Logo Foster" />
         <Link to="/">Início</Link>
         <Link to="/About">Sobre</Link>
         <Link to="/skills">Skills</Link>
@@ -24,7 +24,7 @@ export default function Header() {
       <div className="header-mobile">
         {menu ? (
           <div>
-          <img src={logo01} alt="Logo Foster" />
+          <img src={logo03} alt="Logo Foster" />
           <GiHamburgerMenu size={25}
             className="btn-menu"
             onClick={() => setMenu(!menu)}
