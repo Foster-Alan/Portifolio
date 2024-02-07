@@ -32,26 +32,44 @@ export default function Test() {
   }, []);
 
   return (
-      <div id="moveProject" className="test">
-        <motion.div
-          ref={carousel}
-          className="carousel"
-          whileTap={{ cursor: "grabbing" }}
-        >
-          <motion.div
-            className="inner"
-            drag="x"
-            dragConstraints={{ right: 0, left: -width }}
-          >
-            {cards.map((card) => (
-              <motion.div className="item" key={card}>
-                <a href={card.link} rel="noreferrer" target="_blank">
-                  <img src={card.image} alt={card.link} /> Ir ao projeto
-                </a>
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
+      // <div id="moveProject" className="test">
+      //   <motion.div
+      //     ref={carousel}
+      //     className="carousel"
+      //     whileTap={{ cursor: "grabbing" }}
+      //   >
+      //     <motion.div
+      //       className="inner"
+      //       drag="x"
+      //       dragConstraints={{ right: 0, left: -width }}
+      //     >
+      //       {cards.map((card) => (
+      //         <motion.div className="item" key={card}>
+      //           <a href={card.link} rel="noreferrer" target="_blank">
+      //             <img src={card.image} alt={card.link} />
+      //           </a>
+      //         </motion.div>
+      //       ))}
+      //     </motion.div>
+      //   </motion.div>
+      // </div>
+
+      <div id="moveProject" className="home-conteiner">
+      <h1>Projetos</h1>
+      <motion.div ref={carousel} whileTap={{ cursor: "grabbing" }} className="all-Cards carousel"> 
+<motion.section drag="x" dragConstraints={{ right: 0, left: -width }} className="section-cards inner">
+   {cards.map(card => (
+    <motion.div key={card.id} className={`container div${card.id}`}>
+      <div className="card">
+        <div className="front"></div>
+        <div className="back">
+          <a href={card.link}><img alt={card.link} src={card.image}/></a>
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</motion.section>
+      </motion.div>
       </div>
 
   );

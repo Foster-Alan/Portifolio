@@ -44,7 +44,7 @@ const ImageChanger = () => {
   };
 
   return (
-      <div>
+      <div className="skillGeral">
         {/* <Header /> */}
         <h1>Skills</h1>
         <div className="skills-conteiner">      

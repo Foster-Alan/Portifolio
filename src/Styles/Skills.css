@@ -1,3 +1,15 @@
+.skillGeral {
+  background-color: aliceblue;
+  border-radius: 25px;
+  color: black;
+  margin: 2rem;
+}
+
+.skillGeral h1 {
+  color: black;
+  padding-top: 2rem;
+}
+
 .skills-conteiner {
     display: flex;
     padding-bottom: 8rem;
@@ -14,7 +26,7 @@
 }
 
 .skills-conteiner .image-container {
-    background-color: rgb(255, 252, 232);
+    background-color: aliceblue;
     box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
     margin-right: 2rem;
     border: 3px solid blue;
@@ -44,6 +56,10 @@
 
 .skills-conteiner .image-container:hover {
     background-color: rgb(0, 0, 0);
+}
+
+.skills {
+  width: 120rem;
 }
 
 @media screen and (max-width: 700px) {
