@@ -3,9 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import React from "react";
 import "../Styles/Home.css";
 import "../Styles/Card.css";
-import sobremim from "../img/AlanFosterCard.jpeg";
-import projetos from "../img/Projetos.jpeg";
-import Experiência from "../img/Experiência.jpeg";
 import pixelArt from '../img/PixelArtCard.jpeg'
 import starwars from '../img/StarwarsPlanetsCard.jpeg'
 import Trivia from '../img/TriviaCard.jpeg'
@@ -13,11 +10,6 @@ import trunfo from '../img/TrunfoCard.jpeg'
 import wallet from '../img/WalletCard.jpeg'
 import tunes from '../img/TunesCard.jpeg'
 // import { Link } from 'react-router-dom';
-import Footer from "./Footer";
-import Skills from "./Skills";
-import Header from "./Header";
-import About from "./About";
-import Exp from "./Exp";
 
 import "../Styles/Test.css";
 
@@ -53,7 +45,7 @@ export default function Test() {
           >
             {cards.map((card) => (
               <motion.div className="item" key={card}>
-                <a href={card.link} target="_blank">
+                <a href={card.link} rel="noreferrer" target="_blank">
                   <img src={card.image} alt={card.link} /> Ir ao projeto
                 </a>
               </motion.div>

@@ -2,17 +2,17 @@ import React, { Component } from 'react'
 // import Header from './Header'
 import '../Styles/Home.css';
 import '../Styles/Card.css';
-import sobremim from '../img/AlanFosterCard.jpeg'
-import projetos from '../img/Projetos.jpeg'
-import Skill from '../img/SkillsCard.jpeg'
-import Experiência from '../img/Experiência.jpeg'
-import { Link } from 'react-router-dom';
+// import sobremim from '../img/AlanFosterCard.jpeg'
+// import projetos from '../img/Projetos.jpeg'
+// import Skill from '../img/SkillsCard.jpeg'
+// import Experiência from '../img/Experiência.jpeg'
+// import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Header from "./Header";
 import Exp from "./Exp";
 import Skills from "./Skills";
 import About from "./About";
-import Test from './Test';
+import Test from './Project';
 
 // export default class Home extends Component {
 //   render() {

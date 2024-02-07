@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import Header from '../pages/Header';
+// import Header from '../pages/Header';
 import '../Styles/Skills.css';
-import Footer from '../pages/Footer';
+// import Footer from '../pages/Footer';
 import { IoLogoNodejs } from 'react-icons/io';
 import { GrReactjs } from 'react-icons/gr';
 import { DiJavascript } from 'react-icons/di';

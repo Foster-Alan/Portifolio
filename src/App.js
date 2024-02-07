@@ -5,7 +5,8 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import exp from './pages/Exp';
-import Test from './pages/Test';
+import Test from './pages/Project';
+import TextRevealCardPreview from './pages/TextRevealCardPreview';
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route exact path="/skills" component={ Skills } />
           <Route exact path="/exp" component={ exp } />
           <Route exact path="/test" component={ Test } />
+          <Route exact path="/name" component={ TextRevealCardPreview  } />
 
         </Switch>
       </BrowserRouter>
