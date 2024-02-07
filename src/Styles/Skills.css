@@ -1,5 +1,6 @@
 .skills-conteiner {
     display: flex;
+    padding-bottom: 8rem;
 }
 
 .skills-conteiner .option {

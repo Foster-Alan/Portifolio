@@ -32,7 +32,7 @@
 .about-conteiner {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .aboutMe__conteiner {

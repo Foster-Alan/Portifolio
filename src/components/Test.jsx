@@ -45,7 +45,7 @@ const ImageChanger = () => {
 
   return (
       <div>
-        <Header />
+        {/* <Header /> */}
         <h1>Skills</h1>
         <div className="skills-conteiner">      
       <div className="skills">
@@ -97,7 +97,7 @@ const ImageChanger = () => {
         <p className="image-text">{imageText}</p>
       </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

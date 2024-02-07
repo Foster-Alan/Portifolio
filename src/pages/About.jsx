@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from './Header'
+// import Header from './Header'
 import '../Styles/About.css';
 import trybekit from '../img/trybekit.jpeg'
 import bboy from '../img/bboy.jpg'
@@ -7,7 +7,7 @@ import note from '../img/note.jpg'
 import test from '../img/test.png'
 import infancia from '../img/infancia.jpg'
 import "react-multi-carousel/lib/styles.css";
-import Footer from './Footer';
+// import Footer from './Footer';
 
 export default class About extends Component {
   render() {
@@ -17,8 +17,8 @@ export default class About extends Component {
     ["Com a pandemia, minha atuação na dança foi interrompida, levando-me a descobrir a Trybe. Nela, enxerguei a chance de reacender minha paixão pela tecnologia e percebi, ao longo do curso, que a programação se conectava de diversas maneiras com a dança.", [trybekit]], 
     ["Na dança, certos movimentos das pernas podem ser eficazes mesmo sem movimentar os braços, embora adicionar essa dimensão seja atrativo. Da mesma forma, em uma tela de login, não é estritamente necessário incluir 'insira sua senha' para que o código funcione, mas em ambos os casos, busco aprimorar minha performance ao máximo.", [bboy]]]
     return (
-      <div className="about-conteiner">
-        <Header />
+      <div id='moveAbout' className="about-conteiner">
+        {/* <Header /> */}
         <h1>Sobre mim</h1>
         <div className="about-cards">
           {aboutMe.map((about) => (
@@ -28,7 +28,7 @@ export default class About extends Component {
             </div>
           ))}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     )
   }

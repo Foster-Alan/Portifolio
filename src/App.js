@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import exp from './pages/Exp';
+import Test from './pages/Test';
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
           <Route exact path="/Projects" component={ Projects } />
           <Route exact path="/skills" component={ Skills } />
           <Route exact path="/exp" component={ exp } />
+          <Route exact path="/test" component={ Test } />
 
         </Switch>
       </BrowserRouter>

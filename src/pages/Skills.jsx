@@ -4,7 +4,7 @@ import ImageChanger from '../components/Test';
 
 function App() {
   return (
-    <div>
+    <div id='moveSkills'>
       <ImageChanger />
     </div>
   );
