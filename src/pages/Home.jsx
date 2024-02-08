@@ -8,11 +8,12 @@ import '../Styles/Card.css';
 // import Experiência from '../img/Experiência.jpeg'
 // import { Link } from 'react-router-dom';
 import Footer from './Footer';
-import Header from "./Header";
+import NavBar from "./NavBar";
 import Exp from "./Exp";
 import Skills from "./Skills";
 import About from "./About";
 import Test from './Project';
+import Header from './Header';
 
 // export default class Home extends Component {
 //   render() {
@@ -50,12 +51,15 @@ export default class Home extends Component {
   render() {
     return (
         <div className="home-conteiner">
+       <NavBar />
+
        <Header />
 
-      <About />
+
       <Skills />  
       <Test />  
       <Exp />
+      <About />
       <Footer />
       </div>
     )

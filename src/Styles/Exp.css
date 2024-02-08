@@ -13,12 +13,16 @@
     color: black;
 }
 
+.exp-conteiner {
+    font-size: 1.5rem;
+}
+
 .exp-flex {
     display: flex;
     justify-content: center;
 }
 
 .exp img {
-    max-width: 300px;
+    max-width: 50%;
     border-radius: 20px;
 }

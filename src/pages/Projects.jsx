@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Header from './Header'
+import NavBar from './NavBar'
 import '../Styles/Projects.css';
 import pixelArt from '../img/PixelArtCard.jpeg'
 import starwars from '../img/StarwarsPlanetsCard.jpeg'
@@ -32,7 +32,7 @@ export default class Projects extends Component {
     };
     return (
       <>
-      <Header />
+      <NavBar />
       <div className="projects">
         <h1>Meus Projetos</h1>
         <p>(Clique para ser redirecionado)</p>
