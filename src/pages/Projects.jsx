@@ -9,6 +9,7 @@ import Trivia from '../img/TriviaCard.jpeg'
 import trunfo from '../img/TrunfoCard.jpeg'
 import wallet from '../img/WalletCard.jpeg'
 import tunes from '../img/TunesCard.jpeg'
+import Mylist from '../img/My List.jpeg'
 import Footer from './Footer';
 
 export default class Projects extends Component {
@@ -68,10 +69,13 @@ export default class Projects extends Component {
     <a target="blank" href="https://foster-tunes.netlify.app"><img src={tunes} alt="pixel art" width={200} srcset="" /></a>
     </div>
     <div className="carrosel">
-    <a target="blank" href="https://foster-starwars.netlify.app"><img src={starwars} alt="pixel art" width={200} srcset="" /></a>
+    <a target="blank" href="https://star-wars-red-phi.vercel.app"><img src={starwars} alt="pixel art" width={200} srcset="" /></a>
     </div>
     <div className="carrosel">
     <a target="blank" href="https://foster-trivia.netlify.app"><img src={Trivia} alt="pixel art" width={200} srcset="" /></a>
+    </div>
+    <div className="carrosel">
+    <a target="blank" href="https://my-list-blond.vercel.app"><img src={Mylist} alt="pixel art" width={200} srcset="" /></a>
     </div>
 </Carousel>
 <Footer />
