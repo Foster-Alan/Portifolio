@@ -35,12 +35,15 @@
     transition: transform 1.5s;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    background-image: url('https://i.pinimg.com/564x/1d/70/3c/1d703c1dcafa653e237812e8c4372596.jpg');
+    /* background-image: url('https://i.pinimg.com/564x/1d/70/3c/1d703c1dcafa653e237812e8c4372596.jpg'); */
+    background-image: url('/src/img/newCard.webp');
     border: 1.5px solid white;
     /* width: 70%; */
     object-fit: cover;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%; /* Preenche o contêiner em ambas as direções */
+
 }
 
 .front,
