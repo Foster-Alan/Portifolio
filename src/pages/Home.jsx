@@ -8,6 +8,8 @@ import Skills from '../img/SkillsCard.jpeg'
 import Experiência from '../img/Experiência.jpeg'
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import EyeFollower from '../components/EyeFollower';
+import MatrixRain from "../components/MatrixRain";
 
 export default class Home extends Component {
   render() {
@@ -19,6 +21,8 @@ export default class Home extends Component {
     ];
     return (
         <div className="home-conteiner">
+          <MatrixRain />
+          {/* <EyeFollower /> */}
         {/* <Header /> */}
       <h1>Escolha Uma Carta</h1>
       <div className="all-Cards"> 

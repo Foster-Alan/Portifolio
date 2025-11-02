@@ -5,11 +5,13 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import exp from './pages/Exp';
+import MatrixRain from "./components/MatrixRain";
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
+      <MatrixRain />
         <Switch>
           <Route exact path="/" component={ Home } />
           <Route exact path="/About" component={ About } />

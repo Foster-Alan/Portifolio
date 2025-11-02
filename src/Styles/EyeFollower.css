@@ -1,0 +1,73 @@
+.eye-container {
+    position: fixed;
+    top: 1rem; /* Ajuste fino para melhor centralização no topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para o centro exato */
+    z-index: 1000; /* Mantém sobreposto a outros elementos */
+    width: 150px;
+    height: 100px;
+    pointer-events: none; /* Evita interferência com cliques */
+    background: none; /* Remove qualquer fundo */
+}
+
+
+/* Removendo fundo preto desnecessário */
+.horus-eye {
+    width: 120px;
+    height: 80px;
+    background: transparent; /* Torna o olho transparente */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #FFF79E;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pupil {
+    width: 30px;
+    height: 30px;
+    background: #FFF79E;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.05s linear;
+}
+
+/* .horus-decoration {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .horus-decoration::before,
+.horus-decoration::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background: black;
+    border-radius: 5px;
+}
+
+.horus-decoration::before {
+    top: -20px;
+    left: 10px;
+    transform: rotate(15deg);
+}
+
+.horus-decoration::after {
+    bottom: -20px;
+    right: 10px;
+    transform: rotate(-15deg);
+} */
+
+.eye-svg {
+    width: 100%;
+    height: 100%;
+    background: none; /* Garante que o SVG não tenha fundo */
+}
+
