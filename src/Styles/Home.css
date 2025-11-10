@@ -1,68 +1,147 @@
-h1 {
-    text-align: center;
+/* ======= CONTAINER PRINCIPAL ======= */
+.home-conteiner {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: transparent;
 }
 
-body {
-    min-height: max-content;
-    background-color: black;
-    /* background: radial-gradient(#bc8439, #2d1b13, black); */
-    /* color: rgb(207, 105, 51); */
-    color: white;
-    text-align: center;
-}
-
-.icons-conteiner {
-    /* border: solid red 1px; */
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-
-}
-
-.icons {
-    font-size: 40px;
-    color: white;
-}
-
-.imgprofile {
-    border-radius: 150px;
-}
-
-.all-cards {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    /* optional */
-    -webkit-box-align: start;
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-}
-
-.section-cards {
-    /* border: solid red 1px; */
-    align-items: center;
-    justify-content: center;
-}
-
-.trybe {
-    display: flex;
-    justify-content: center;
-}
-
+/* ======= TÍTULO PRINCIPAL ======= */
+.home-title,
 .home-conteiner h1 {
-    /* color: rgb(207, 105, 51); */
-    color: rgb(3, 3, 3);
-    font-size: 3rem;
-    /* text-shadow: 0 0 10px #ffffff; */
-    padding-bottom: 1rem;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #fddb3a;
+  text-shadow: 0 0 10px rgba(255, 219, 58, 0.6), 0 0 25px rgba(255, 219, 58, 0.4);
+  letter-spacing: 3px;
+  animation: glowTitle 3s ease-in-out infinite;
+  z-index: 3;
+}
+
+/* brilho pulsante no título */
+@keyframes glowTitle {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 219, 58, 0.4), 0 0 20px rgba(255, 219, 58, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 25px rgba(255, 219, 58, 0.8), 0 0 45px rgba(255, 219, 58, 0.6);
+  }
+}
+
+/* ======= ORGANIZAÇÃO DAS CARTAS ======= */
+.all-Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+/* ======= FUNDO / ELEMENTOS ANIMADOS ======= */
+.home-conteiner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 219, 58, 0.08),
+    rgba(0, 0, 0, 0.9)
+  );
+  z-index: 1;
+}
+
+/* ======= AJUSTES DE TEXTO ======= */
+body {
+  color: white;
+  text-align: center;
+  font-family: "Orbitron", "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* ======= SUBTÍTULO ANIMADO (EFEITO DIGITAÇÃO) ======= */
+.typing-text {
+  font-family: "Orbitron", "Poppins", sans-serif;
+  color: #fddb3a;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fddb3a;
+  animation: blink 0.75s step-end infinite;
+  text-shadow: 0 0 15px rgba(255, 219, 58, 0.6);
+  min-height: 2rem; /* evita pulo durante a troca */
+}
+
+.typing-text.finished {
+  animation: blinkEnd 1.5s infinite ease-in-out;
+}
+
+@keyframes blinkEnd {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* efeito de digitação */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* efeito do cursor piscando */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* responsivo */
+@media screen and (max-width: 768px) {
+  .typing-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* ======= MOBILE ======= */
+@media screen and (max-width: 768px) {
+  .home-title {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .all-Cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* ======= TELAS MENORES ======= */
+@media screen and (max-width: 480px) {
+  .home-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
 }

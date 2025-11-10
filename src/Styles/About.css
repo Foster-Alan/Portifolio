@@ -1,154 +1,172 @@
-.skills {
-    /* border: solid red 1px; */
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    justify-content: center;
-    margin: 2rem auto;
-    gap: 2rem;
-}
-
-.skills a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1rem;
-
-}
-
-.skills h1 {
-    display: flex;
-    font-size: 2.5rem;
-    width: 100%;
-    justify-content: center;
-    /* text-shadow: 0 0 10px #ffb300; */
-}
-
-.skills svg {
-    width: 60px;
-    align-self: center;
-}
-
+/* ======= SEÇÃO ABOUT ======= */
 .about-conteiner {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  box-sizing: border-box;
 }
 
-.aboutMe__conteiner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem 2rem;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+/* ======= TÍTULO ======= */
+.about-title {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #fddb3a;
+  text-shadow: 0 0 15px rgba(255, 219, 58, 0.7);
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-.about__card {
-    border: 1px solid #a39869;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    width: 300px;
-    height: 610px;
-    padding: 1rem;
-    border-radius: 5px;
-}   
-
-.divImg {
-    height: 250px;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-self: flex-start;
-
+/* ======= GRID DE CARDS ======= */
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: flex-start;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.divImg img {
-    object-fit: cover;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    /* border: 4px solid #a39869; */
+/* ======= CARD ======= */
+.about-card {
+  flex: 0 0 320px; /* largura fixa dos cards para alinhar 3 por linha */
+  width: 320px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 219, 58, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 219, 58, 0.1);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.about__card p {
-    /* margin-top: 1rem; */
-    /* border-top: 1px solid #a39869; */
-    /* background-color: grey; */
-    font-size: 1.2rem;
-    text-align: start;
-    width: 100%;
-    height: 100%;
-    align-self: flex-end;
-    line-height: 2.3rem;
+.about-card:hover {
+  transform: translateY(-8px);
+  border-color: #fddb3a;
+  box-shadow: 0 0 20px rgba(255, 219, 58, 0.6);
 }
 
-.about-conteiner h1 {
-    font-size: 2.5rem;
+/* ======= ÍCONE ======= */
+.about-icon {
+  font-size: 2.4rem;
+  color: #fddb3a;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-
-.about-cards {
-    /* border: 1px solid green; */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+/* ======= IMAGEM ======= */
+.about-image {
+  width: 100%;
+  height: auto; /* exibe imagem completa */
+  max-height: 200px; /* altura máxima sem corte */
+  object-fit: contain; /* evita cortar a imagem */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  /* border: 1px solid rgba(255, 219, 58, 0.3); */
 }
 
-.image-container {
-    border: 2px solid #a39869;
-    box-shadow: 0px 0px 1px 1px #a39869;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-    /* width: 19rem; */
-    /* height: 19rem; */
-    cursor: pointer;
-
+/* ======= TEXTOS ======= */
+.about-card h2 {
+  color: #fddb3a;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-.image-container:hover {
-    scale: 1.1;
-    box-shadow: 0px 0px 2px 2px #a39869;
+.about-card p {
+  color: #d4d4d4;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: left;
 }
 
-.image-container img {
-    width: 300px;
-    height: 300px;
-    transition: opacity 0.3s ease;
-    object-fit: cover;
+/* ======= ANIMAÇÃO SUAVE ======= */
+.about-card {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
 }
 
-.image-container:hover img {
+.about-card:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+.about-card:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  from {
     opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.image-text {
-    display: none; /* Inicialmente, o texto é ocultado */
-    position: absolute;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* font-size: 18px; */
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    /* border-radius: 5px; */
-    /* pointer-events: none; */
+/* ======= TABLET ======= */
+@media screen and (max-width: 1024px) {
+  .about-card {
+    flex: 0 0 300px;
+    width: 300px;
+  }
+
+  .about-image {
+    max-height: 180px;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+  }
 }
 
-.image-container:hover .image-text {
-    /* border: 1px solid red; */
-    display: flex; /* Ao passar o cursor, o texto é exibido */
+/* ======= MOBILE ======= */
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card {
+    width: 90%;
+    max-width: 480px;
+  }
+
+  .about-image {
+    max-height: 160px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
 }
 
+/* ======= CELULARES PEQUENOS ======= */
+@media screen and (max-width: 400px) {
+  .about-card {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .about-image {
+    max-height: 140px;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+}

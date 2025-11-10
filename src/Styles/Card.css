@@ -1,96 +1,126 @@
+/* ======= CONTAINER DE TODAS AS CARTAS ======= */
 .section-cards {
-    /* padding-left: 5%; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    /* border: solid 4px red; */
-    /* background-color: rgb(236, 236, 236); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
+/* ======= CONTAINER INDIVIDUAL COM PERSPECTIVA ======= */
 .container {
-    width: min-content;
-    height: 370px;
-    -webkit-perspective: 1500;
-    perspective: 1500;
+  width: 250px;
+  height: 370px;
+  perspective: 1000px; /* cria a profundidade 3D */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container:hover .card {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.card,
-.front,
-.back {
-    max-height: 370px;
-    width: 250px;
-    height: 100%;
-    border-radius: 5px;
-}
-
+/* ======= CARTA ======= */
 .card {
-    position: relative;
-    -webkit-transition: transform 1.5s;
-    transition: transform 1.5s;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    /* background-image: url('https://i.pinimg.com/564x/1d/70/3c/1d703c1dcafa653e237812e8c4372596.jpg'); */
-    background-image: url('/src/img/newCard.webp');
-    border: 1.5px solid white;
-    /* width: 70%; */
-    object-fit: cover;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%; /* Preenche o contêiner em ambas as direções */
-
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
 }
 
+/* ======= ROTAÇÃO INDIVIDUAL ======= */
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* ======= FACES ======= */
 .front,
 .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
+/* ======= FRENTE (imagem padrão do verso da carta Yu-Gi-Oh) ======= */
 .front {
-    z-index: 2;
-    overflow: hidden;
-   
+  background-image: url('https://vignette.wikia.nocookie.net/yugioh/images/9/95/SlifertheSkyDragon-GBI-AE-Back.png');
+  background-size: cover;
+  background-position: center;
+  border: 1.5px solid rgba(255, 219, 58, 0.4);
+  box-shadow: 0 0 10px rgba(255, 219, 58, 0.2);
+  transform: rotateY(0deg);
+  z-index: 2;
 }
 
+/* ======= VERSO (mostra o conteúdo/link) ======= */
 .back {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    background-color: rgb(88,96,111);
-
+  transform: rotateY(180deg);
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(255, 219, 58, 0.3);
+  box-shadow: 0 0 10px rgba(255, 219, 58, 0.15);
 }
 
+/* ======= IMAGEM DO VERSO ======= */
 .back img {
-    width: 100%;
-    /* height: auto; */
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-@media screen and (max-width: 700px) {
-    .section-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+/* ======= HOVER NA IMAGEM ======= */
+.container:hover .back img {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 15px rgba(255, 219, 58, 0.5));
+}
 
-    }
+/* ======= EFEITO DE ENTRADA ======= */
+.container {
+  opacity: 0;
+  animation: appear 0.8s ease forwards;
+}
 
-    .container {
-        width: 80%;
-        /* border: solid red 1px; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* delays individuais para a invocação digital */
+.div1 { animation-delay: 0.2s; }
+.div2 { animation-delay: 0.4s; }
+.div3 { animation-delay: 0.6s; }
+.div4 { animation-delay: 0.8s; }
+
+/* ======= MOBILE ======= */
+@media screen and (max-width: 768px) {
+  .section-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .container {
+    width: 200px;
+    height: 300px;
+  }
+
+  .back img {
+    object-fit: contain;
+  }
 }

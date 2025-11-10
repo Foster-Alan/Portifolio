@@ -1,38 +1,166 @@
-.projects {
-    /* border: solid red 1px; */
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    justify-content: space-between;
+/* ======= CONTAINER PRINCIPAL ======= */
+.projects-page {
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  overflow-x: hidden;
+}
+
+/* ======= TÍTULOS ======= */
+.projects-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #fddb3a;
+  text-shadow: 0 0 15px rgba(255, 219, 58, 0.7);
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.projects-subtitle {
+  font-size: 1.1rem;
+  color: #d4d4d4;
+  margin-bottom: 2rem;
+}
+
+/* ======= GRADE CENTRALIZADA ======= */
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ======= ITEM (IMAGEM + TEXTO) ======= */
+.project-item {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 350px; /* controla o tamanho do bloco */
+  flex: 1 1 150px; /* permite ajuste automático do número de colunas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item:hover {
+  transform: scale(1.03);
+}
+
+/* ======= IMAGEM ======= */
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* mostra a imagem completa */
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 10px rgba(255, 219, 58, 0.15);
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 219, 58, 0.6);
+}
+
+/* ======= TÍTULO ABAIXO DA IMAGEM ======= */
+.project-name {
+  color: #fddb3a;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  text-shadow: 0 0 8px rgba(255, 219, 58, 0.3);
+  text-align: center;
+}
+
+/* ======= ANIMAÇÃO SUAVE ======= */
+.project-item {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.project-item:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.project-item:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= TABLET ======= */
+@media screen and (max-width: 1024px) {
+  .projects-gallery {
+    gap: 1.5rem;
+  }
+
+  .project-item {
+    flex: 1 1 45%;
+    max-width: 320px;
+  }
+
+  .projects-title {
+    font-size: 2.4rem;
+  }
+
+  .project-name {
+    font-size: 1rem;
+  }
+}
+
+/* ======= MOBILE ======= */
+@media screen and (max-width: 768px) {
+  .projects-gallery {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
+    gap: 1.5rem;
+  }
 
-.projects h1 {
-    display: flex;
+  .project-item {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .project-image {
     width: 100%;
-    /* align-items: center; */
-    justify-content: center;
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    /* text-shadow: 0 0 10px #ffb300; */
+    height: auto;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .project-name {
+    font-size: 1rem;
+  }
 }
 
-.projects p {
-    text-align: center;
-}
+/* ======= CELULARES PEQUENOS ======= */
+@media screen and (max-width: 400px) {
+  .projects-title {
+    font-size: 1.6rem;
+  }
 
-
-@media screen and (max-width: 700px) {
-    .projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-
-
-
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
 }
