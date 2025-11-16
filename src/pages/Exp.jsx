@@ -12,7 +12,7 @@ export default function Exp() {
       description:
         "Atuação no setor de prevenção a fraudes e análise de risco transacional. Responsável por identificar padrões suspeitos, mitigar riscos e oferecer suporte técnico especializado aos clientes, garantindo segurança e eficiência na operação.",
       icon: <FaUserTie />,
-      period: "2024 - Atual",
+      period: "2023 - Atual",
     },
     {
       company: "Trybe",
