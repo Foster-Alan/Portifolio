@@ -14,9 +14,9 @@ import Mylist from '../img/My List.jpeg';
 export default function Projects() {
   const projects = [
     { href: "https://foster-pixel-art.netlify.app", src: pixelArt, title: "Pixel Art" },
-    { href: "https://foster-trunfo.netlify.app", src: trunfo, title: "Trunfo" },
-    { href: "https://foster-wallet.netlify.app", src: wallet, title: "Wallet" },
-    { href: "https://foster-tunes.netlify.app", src: tunes, title: "Tunes" },
+    // { href: "https://foster-trunfo.netlify.app", src: trunfo, title: "Trunfo" },
+    // { href: "https://foster-wallet.netlify.app", src: wallet, title: "Wallet" },
+    // { href: "https://foster-tunes.netlify.app", src: tunes, title: "Tunes" },
     { href: "https://star-wars-red-phi.vercel.app", src: starwars, title: "Star Wars Planets" },
     { href: "https://foster-trivia.netlify.app", src: Trivia, title: "Trivia" },
     { href: "https://my-list-blond.vercel.app", src: Mylist, title: "My List" },
