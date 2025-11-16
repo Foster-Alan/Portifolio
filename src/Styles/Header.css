@@ -81,6 +81,30 @@ html, body {
   transition: all 0.3s ease;
 }
 
+
+.lang-btn {
+  margin-left: 1rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,219,58,0.2);
+  background: rgba(0,0,0,0.45);
+  color: #fddb3a;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.lang-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(255,219,58,0.06); }
+
+.lang-btn-mobile {
+  margin-right: 0.6rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,219,58,0.12);
+  background: rgba(0,0,0,0.35);
+  color: #fddb3a;
+  font-weight: 600;
+  cursor: pointer;
+}
 /* ======= MOBILE NAV ======= */
 .header-mobile {
   display: none;

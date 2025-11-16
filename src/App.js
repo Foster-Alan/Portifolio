@@ -6,21 +6,23 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import exp from './pages/Exp';
 import MatrixRain from "./components/MatrixRain";
+import { LanguageProvider } from "./context/LanguageContext";
 
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
-      <MatrixRain />
-        <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/About" component={ About } />
-          <Route exact path="/Projects" component={ Projects } />
-          <Route exact path="/skills" component={ Skills } />
-          <Route exact path="/exp" component={ exp } />
-
-        </Switch>
-      </BrowserRouter>
+      <LanguageProvider>
+        <BrowserRouter>
+          <MatrixRain />
+          <Switch>
+            <Route exact path="/" component={ Home } />
+            <Route exact path="/About" component={ About } />
+            <Route exact path="/Projects" component={ Projects } />
+            <Route exact path="/skills" component={ Skills } />
+            <Route exact path="/exp" component={ exp } />
+          </Switch>
+        </BrowserRouter>
+      </LanguageProvider>
     );
   }
 }

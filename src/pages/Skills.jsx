@@ -1,3 +1,4 @@
+// src/pages/Skills.jsx
 import React, { useState } from 'react';
 import Header from './Header';
 import '../Styles/Skills.css';
@@ -24,10 +25,12 @@ import {
 import { ImHtmlFive } from 'react-icons/im';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import { FaPython } from 'react-icons/fa';
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations";
 
 // Imagens
 import htmlimage from '../img/html.png';
-import css from '../img/css.png';
+import cssImg from '../img/css.png';
 import javascript from '../img/javaScript.png';
 import git from '../img/git.png';
 import nodejs from '../img/nodejs.png';
@@ -42,6 +45,9 @@ import Jest from '../img/Jest.png';
 import testing from '../img/testing.png';
 
 export default function Skills() {
+  const { lang } = useLanguage();
+  const t = translations[lang].skills;
+
   const [currentImage, setCurrentImage] = useState(htmlimage);
   const [imageText, setImageText] = useState(
     'HTML (Hypertext Markup Language). É a linguagem de marcação utilizada para criar a estrutura e o conteúdo básico de páginas da web.'
@@ -49,7 +55,7 @@ export default function Skills() {
 
   const skills = [
     { icon: <ImHtmlFive />, label: 'HTML', img: htmlimage, desc: 'HTML (Hypertext Markup Language). É a linguagem de marcação utilizada para criar a estrutura e o conteúdo básico de páginas da web.' },
-    { icon: <IoLogoCss3 />, label: 'CSS', img: css, desc: 'CSS (Cascading Style Sheets). Controla o estilo e layout visual das páginas.' },
+    { icon: <IoLogoCss3 />, label: 'CSS', img: cssImg, desc: 'CSS (Cascading Style Sheets). Controla o estilo e layout visual das páginas.' },
     { icon: <DiJavascript />, label: 'JavaScript', img: javascript, desc: 'JavaScript adiciona interatividade e comportamento dinâmico às páginas web.' },
     { icon: <SiTypescript />, label: 'TypeScript', img: typescript, desc: 'TypeScript adiciona tipagem estática e segurança ao JavaScript.' },
     { icon: <FaPython />, label: 'Python', img: Python, desc: 'Python é uma linguagem versátil e legível, usada em web, ciência de dados e automação.' },
@@ -72,7 +78,7 @@ export default function Skills() {
   return (
     <div className="skills-page">
       <Header />
-      <h1 className="skills-title">Skills</h1>
+      <h1 className="skills-title">{t.title}</h1>
       <div className="skills-wrapper">
         <div className="skills-grid">
           {skills.map((skill, i) => (
