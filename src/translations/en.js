@@ -1,5 +1,6 @@
 // src/translations/en.js
-export default {
+
+const en = {
   header: {
     home: "Home",
     about: "About",
@@ -21,27 +22,27 @@ export default {
       {
         title: "Childhood & Games",
         description:
-          "My passion for games started early, following each new release and discovering the power of digital creativity."
+          "My passion for games started early, discovering the power of digital creativity."
       },
       {
         title: "First Contact With Technology",
         description:
-          "During high school I achieved an outstanding SPAECE score and received my first laptop — the start of my tech journey."
+          "In high school I earned outstanding grades and received my first laptop — the beginning of my tech journey."
       },
       {
         title: "Dance & Expression",
         description:
-          "I worked as an instructor and dancer in Expressão de Rua Crew, exploring movement and developing social and creative skills."
+          "I worked as an urban dance instructor, improving my creativity and communication."
       },
       {
         title: "Trybe",
         description:
-          "At Trybe I developed full-stack web skills, working with front-end, back-end and agile methodologies."
+          "At Trybe I developed full-stack programming skills using modern web technologies."
       },
       {
         title: "Personal Evolution",
         description:
-          "The union of technology and art shaped my view: always improve, be it clean code or a perfect move."
+          "The union of art and technology shaped my mentality: always improving."
       }
     ]
   },
@@ -74,5 +75,24 @@ export default {
   projects: {
     title: "My Projects",
     subtitle: "(Click to open)"
+  },
+
+  skillsDescriptions: {
+    html: "HTML is the language used to structure content on the web.",
+    css: "CSS controls the visual layout and styling of pages.",
+    javascript: "JavaScript adds interactivity and dynamic behavior.",
+    typescript: "TypeScript adds static typing to JavaScript.",
+    python: "Python is simple and powerful, widely used in automation and AI.",
+    node: "Node.js runs JavaScript on the backend.",
+    react: "React creates reactive UI components.",
+    redux: "Redux manages complex state reliably.",
+    docker: "Docker isolates applications in containers.",
+    testingLibrary: "Testing Library focuses on real-user testing.",
+    jest: "Jest is a fast testing framework for JavaScript.",
+    git: "Git is the most used version control system worldwide.",
+    sql: "SQL manages and queries relational databases.",
+    mongodb: "MongoDB is a document-based NoSQL database."
   }
 };
+
+export default en;

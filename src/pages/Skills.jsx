@@ -1,8 +1,9 @@
 // src/pages/Skills.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import '../Styles/Skills.css';
 import Footer from './Footer';
+
 import {
   IoLogoNodejs,
   IoLogoCss3
@@ -25,67 +26,68 @@ import {
 import { ImHtmlFive } from 'react-icons/im';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import { FaPython } from 'react-icons/fa';
-import { useLanguage } from "../context/LanguageContext";
-import { translations } from "../translations";
 
-// Imagens
 import htmlimage from '../img/html.png';
 import cssImg from '../img/css.png';
-import javascript from '../img/javaScript.png';
-import git from '../img/git.png';
-import nodejs from '../img/nodejs.png';
-import mong from '../img/mong.png';
-import docker from '../img/docker.png';
-import Python from '../img/Python.png';
-import react from '../img/react.png';
-import redux from '../img/redux.png';
-import typescript from '../img/type.png';
-import sql from '../img/sql.png';
-import Jest from '../img/Jest.png';
-import testing from '../img/testing.png';
+import javascriptImg from '../img/javaScript.png';
+import gitImg from '../img/git.png';
+import nodejsImg from '../img/nodejs.png';
+import mongImg from '../img/mong.png';
+import dockerImg from '../img/docker.png';
+import PythonImg from '../img/Python.png';
+import reactImg from '../img/react.png';
+import reduxImg from '../img/redux.png';
+import typescriptImg from '../img/type.png';
+import sqlImg from '../img/sql.png';
+import JestImg from '../img/Jest.png';
+import testingImg from '../img/testing.png';
+
+import { useLanguage } from "../context/LanguageContext";
+import translations from "../translations";
 
 export default function Skills() {
+
   const { lang } = useLanguage();
-  const t = translations[lang].skills;
+  const t = translations[lang].skillsDescriptions;
 
-  const [currentImage, setCurrentImage] = useState(htmlimage);
-  const [imageText, setImageText] = useState(
-    'HTML (Hypertext Markup Language). É a linguagem de marcação utilizada para criar a estrutura e o conteúdo básico de páginas da web.'
-  );
+  // 🔥 Agora salvamos a SKILL ATIVA, não o texto/imagem
+  const [activeSkill, setActiveSkill] = useState("html");
 
+  // Lista única de skills
   const skills = [
-    { icon: <ImHtmlFive />, label: 'HTML', img: htmlimage, desc: 'HTML (Hypertext Markup Language). É a linguagem de marcação utilizada para criar a estrutura e o conteúdo básico de páginas da web.' },
-    { icon: <IoLogoCss3 />, label: 'CSS', img: cssImg, desc: 'CSS (Cascading Style Sheets). Controla o estilo e layout visual das páginas.' },
-    { icon: <DiJavascript />, label: 'JavaScript', img: javascript, desc: 'JavaScript adiciona interatividade e comportamento dinâmico às páginas web.' },
-    { icon: <SiTypescript />, label: 'TypeScript', img: typescript, desc: 'TypeScript adiciona tipagem estática e segurança ao JavaScript.' },
-    { icon: <FaPython />, label: 'Python', img: Python, desc: 'Python é uma linguagem versátil e legível, usada em web, ciência de dados e automação.' },
-    { icon: <IoLogoNodejs />, label: 'Node.js', img: nodejs, desc: 'Node.js permite executar JavaScript no lado do servidor.' },
-    { icon: <GrReactjs />, label: 'React', img: react, desc: 'React é uma biblioteca JavaScript para criar interfaces de usuário reativas.' },
-    { icon: <SiRedux />, label: 'Redux', img: redux, desc: 'Redux gerencia o estado global de aplicações React.' },
-    { icon: <GrDocker />, label: 'Docker', img: docker, desc: 'Docker cria e executa aplicativos em contêineres isolados.' },
-    { icon: <SiTestinglibrary />, label: 'Testing Library', img: testing, desc: 'Testing Library foca em testes baseados no comportamento do usuário.' },
-    { icon: <SiJest />, label: 'Jest', img: Jest, desc: 'Jest é um framework de testes JavaScript rápido e simples.' },
-    { icon: <DiGit />, label: 'Git', img: git, desc: 'Git é um sistema de controle de versão distribuído amplamente usado.' },
-    { icon: <AiOutlineConsoleSql />, label: 'SQL', img: sql, desc: 'SQL é uma linguagem para gerenciar e consultar bancos de dados relacionais.' },
-    { icon: <SiMongodb />, label: 'MongoDB', img: mong, desc: 'MongoDB é um banco de dados NoSQL orientado a documentos.' },
+    { icon: <ImHtmlFive />, key: 'html', label: 'HTML', img: htmlimage },
+    { icon: <IoLogoCss3 />, key: 'css', label: 'CSS', img: cssImg },
+    { icon: <DiJavascript />, key: 'javascript', label: 'JavaScript', img: javascriptImg },
+    { icon: <SiTypescript />, key: 'typescript', label: 'TypeScript', img: typescriptImg },
+    { icon: <FaPython />, key: 'python', label: 'Python', img: PythonImg },
+    { icon: <IoLogoNodejs />, key: 'node', label: 'Node.js', img: nodejsImg },
+    { icon: <GrReactjs />, key: 'react', label: 'React', img: reactImg },
+    { icon: <SiRedux />, key: 'redux', label: 'Redux', img: reduxImg },
+    { icon: <GrDocker />, key: 'docker', label: 'Docker', img: dockerImg },
+    { icon: <SiTestinglibrary />, key: 'testingLibrary', label: 'Testing Library', img: testingImg },
+    { icon: <SiJest />, key: 'jest', label: 'Jest', img: JestImg },
+    { icon: <DiGit />, key: 'git', label: 'Git', img: gitImg },
+    { icon: <AiOutlineConsoleSql />, key: 'sql', label: 'SQL', img: sqlImg },
+    { icon: <SiMongodb />, key: 'mongodb', label: 'MongoDB', img: mongImg },
   ];
 
-  const handleChange = (img, desc) => {
-    setCurrentImage(img);
-    setImageText(desc);
-  };
+  // Skill ativa inteira
+  const selected = skills.find((s) => s.key === activeSkill);
 
   return (
     <div className="skills-page">
       <Header />
-      <h1 className="skills-title">{t.title}</h1>
+      <h1 className="skills-title">{translations[lang].skills.title}</h1>
+
       <div className="skills-wrapper">
+
+        {/* grid dos ícones */}
         <div className="skills-grid">
-          {skills.map((skill, i) => (
+          {skills.map((skill) => (
             <div
-              key={i}
-              className="skill-card"
-              onClick={() => handleChange(skill.img, skill.desc)}
+              key={skill.key}
+              className={`skill-card ${skill.key === activeSkill ? "active-skill" : ""}`}
+              onClick={() => setActiveSkill(skill.key)}
             >
               <div className="skill-icon">{skill.icon}</div>
               <p>{skill.label}</p>
@@ -93,11 +95,14 @@ export default function Skills() {
           ))}
         </div>
 
+        {/* painel da skill selecionada */}
         <div className="skills-display">
-          <img src={currentImage} alt="Skill" className="skills-image" />
-          <div className="skills-text">{imageText}</div>
+          <img src={selected.img} alt={selected.label} className="skills-image" />
+          <div className="skills-text">{t[selected.key]}</div>
         </div>
+
       </div>
+
       <Footer />
     </div>
   );

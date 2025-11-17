@@ -1,5 +1,6 @@
 // src/translations/pt.js
-export default {
+
+const pt = {
   header: {
     home: "Início",
     about: "Sobre",
@@ -74,5 +75,24 @@ export default {
   projects: {
     title: "Meus Projetos",
     subtitle: "(Clique para abrir)"
+  },
+
+  skillsDescriptions: {
+    html: "HTML é a linguagem usada para estruturar conteúdos na web.",
+    css: "CSS controla o estilo visual e o layout de páginas.",
+    javascript: "JavaScript adiciona comportamento dinâmico e interatividade.",
+    typescript: "TypeScript adiciona tipagem estática ao JavaScript.",
+    python: "Python é simples e poderoso, usado em automação e ciência de dados.",
+    node: "Node.js permite rodar JavaScript no backend.",
+    react: "React cria componentes e interfaces reativas.",
+    redux: "Redux gerencia estados globais de forma previsível.",
+    docker: "Docker cria ambientes isolados para aplicações.",
+    testingLibrary: "Testing Library foca em testes baseados no usuário.",
+    jest: "Jest é um framework de testes rápido e simples.",
+    git: "Git é o sistema de controle de versão mais usado no mundo.",
+    sql: "SQL consulta bancos de dados relacionais.",
+    mongodb: "MongoDB é um banco NoSQL orientado a documentos."
   }
 };
+
+export default pt;
